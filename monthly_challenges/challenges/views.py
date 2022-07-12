@@ -43,7 +43,7 @@ def monthly_challenge_by_number(request, month_index):
 def monthly_challenge(request, month):
     try:
         challenge_text = monthly_challenges[month]
-        respone_data = f"<h1>{challenge_text}</h1>"
+        respone_data = render_to_string("challenges/challenge.html")
         return HttpResponse(respone_data)
     except:
         return HttpResponseNotFound(f"<h2>{month} is not supported!</h2>")
