@@ -2,7 +2,7 @@
 
 {% block page_title %}
     All challenges
-{% endblock page_title %}
+{% endblock %}
 
 {% block content %}
     <ul>
@@ -10,4 +10,4 @@
             <li><a href="{% url "month-challenge" m %}" >{{ m|title }}</a></li>
         {% endfor %}
     </ul>
-{% endblock content %}
+{% endblock %}
