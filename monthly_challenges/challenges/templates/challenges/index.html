@@ -8,7 +8,9 @@
 </head>
 <body>
     <ul>
-        
+        {% for month in months %}
+            <li><a href="" >{{ month|title }}</a></li>
+        {% endfor %}
     </ul>
 </body>
 </html>
