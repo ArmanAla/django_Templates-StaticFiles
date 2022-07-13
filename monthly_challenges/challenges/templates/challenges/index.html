@@ -8,8 +8,8 @@
 </head>
 <body>
     <ul>
-        {% for month in months %}
-            <li><a href="/challenges/{{ month }}" >{{ month|title }}</a></li>
+        {% for m in months %}
+            <li><a href="{% url "month-challenge" m %}" >{{ m|title }}</a></li>
         {% endfor %}
     </ul>
 </body>
