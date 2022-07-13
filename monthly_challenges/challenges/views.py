@@ -15,7 +15,7 @@ monthly_challenges = {
     "september" : "Walk instead of Driving!",
     "october" : "Tell no lies!",
     "november" : "Face your fears!",
-    "december" : "Listen to music!"
+    "december" : None
 }
 
 def index(request):
