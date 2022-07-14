@@ -43,4 +43,4 @@ def monthly_challenge(request, month):
             "month": month,
         })
     except:
-        return HttpResponseNotFound(f"<h2>{month} is not supported!</h2>")
+        raise Http404()
